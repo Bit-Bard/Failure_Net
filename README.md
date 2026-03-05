@@ -1,6 +1,6 @@
-# 🧠 FailureNet — Failure-Aware Deep Learning System
+# 🧠 FailureNet : Failure-Aware Deep Learning System
 
-# img 
+![Interface](Interface.png)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
@@ -20,7 +20,7 @@
 
 ---
 
-## 🚀 What Makes This Different
+## Different from other project 
 
 Most ML projects stop here:
 
@@ -30,10 +30,10 @@ Train model → Evaluate accuracy → Done
 
 FailureNet focuses on **AI reliability**. It demonstrates:
 
-- 📊 Uncertainty estimation
-- 🔮 Failure prediction
-- ✅ Selective prediction (Accept / Reject)
-- ⚖️ Risk-aware decision making
+1. Uncertainty estimation
+2. Failure prediction
+3. Selective prediction (Accept / Reject)
+4. Risk-aware decision making
 
 These topics are actively researched in **AI safety** and **trustworthy machine learning**.
 
@@ -41,7 +41,7 @@ These topics are actively researched in **AI safety** and **trustworthy machine 
 
 ## ❗ The Problem
 
-Most ML models always output a prediction — even when they're wrong.
+Most ML models always output a prediction —> even when they're wrong.
 
 ```
 Image   →  Model predicts "Cat"
@@ -64,7 +64,7 @@ We want the model to say **"I'm not sure"** instead of making a wrong decision.
 
 ---
 
-## ✅ The Solution
+##  The Solution
 
 FailureNet outputs not just a class, but a full reliability report:
 
@@ -182,10 +182,6 @@ failure_probability = 0.78
 
 ```
 FailureNet/
-│
-├── Data/                    # Dataset files
-├── Fail/                    # Virtual environment
-│
 ├── model/
 │   ├── best_model.pth       # Trained CNN classifier
 │   └── failure_head.pth     # Trained failure predictor
@@ -227,7 +223,7 @@ streamlit run app.py
 
 ---
 
-## ⚠️ Known Limitation
+## Important :  Known Limitation
 
 The classifier was trained on **CIFAR-10** (32×32 images).
 
